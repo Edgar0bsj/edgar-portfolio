@@ -8,13 +8,13 @@ const person = {
   },
   role: "Design Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
+  email: "01.edgarjunior@gmail.com",
   location: "America/Sao_Paulo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Rio de Janeiro", "Mesquita"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -30,12 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Edgar0bsj",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/edgar-junior/",
   },
   {
     name: "X",
@@ -55,25 +55,24 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Programar é transformar ideias em possibilidades.</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Portfolio: <strong className="ml-4">Edgar</strong></>,
+    href: "https://www.linkedin.com/in/edgar-junior/",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Me chamo Edgar, sou desenvolvedor de sistemas nas horas vagas. Gosto de criar experiências intuitivas para o usuário e, sempre que posso, desenvolvo meus próprios projetos para testar ideias e explorar novas tecnologias.
     </>
   ),
 };
 
 const about = {
   path: "/about",
-  label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  label: "Edgar",
+  title: `Sobre – ${person.name}`,
+  description: `${person.name}, ${person.role} - ${person.location}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -82,7 +81,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -90,14 +89,12 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Desenvolver aplicações, seja para web ou para uso local, me desafia constantemente. Quanto mais mergulho nesse universo, mais percebo o quanto ainda há para aprender... e isso me empolga de verdade.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
@@ -144,25 +141,25 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Estudos",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Universidade Norte do Paraná",
+        description: <>Análise e Desenvolvimento de Sistemas.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "COD3R",
+        description: <>Next.js, React, Java, JavaScript, TypeScript, PHP e Python.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Habilidades Técnicas",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Javascript/Typescript",
+        description: <>Tenho uma base sólida em JavaScript e TypeScript.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -181,7 +178,7 @@ const about = {
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: <>Curto trabalhar com Next.js e venho explorando seus recursos para criar aplicações web rápidas e bem estruturadas.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
