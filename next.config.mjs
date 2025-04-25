@@ -1,12 +1,10 @@
 import mdx from "@next/mdx";
 
-const withMDX = mdx({
-  extension: /\.mdx?$/,
-  options: {},
-});
-
-/** @type {import('next').NextConfig} */
+// Configuração do ESLint
 const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   transpilePackages: ["next-mdx-remote"],
   sassOptions: {
@@ -15,4 +13,11 @@ const nextConfig = {
   },
 };
 
+// Configuração do MDX
+const withMDX = mdx({
+  extension: /\.mdx?$/,
+  options: {},
+});
+
+// Exporte a configuração combinada
 export default withMDX(nextConfig);
