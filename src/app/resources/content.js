@@ -1,12 +1,12 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Edgar",
+  lastName: "Junior",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Programador Dev",
   avatar: "/images/avatar.jpg",
   email: "01.edgarjunior@gmail.com",
   location: "America/Sao_Paulo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
