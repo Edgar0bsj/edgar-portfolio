@@ -67,18 +67,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 <SmartLink
                   suffixIcon="arrowRight"
                   style={{ margin: "0", width: "fit-content" }}
-                  href={href}
+                  href="/about"
                 >
-                  <Text variant="body-default-s">Read case study</Text>
+                  <Text variant="body-default-s">Um pouco sobre mim</Text>
                 </SmartLink>
               )}
               {link && (
                 <SmartLink
                   suffixIcon="arrowUpRightFromSquare"
                   style={{ margin: "0", width: "fit-content" }}
-                  href={link}
+                  href="/gallery"
                 >
-                  <Text variant="body-default-s">View project</Text>
+                  <Text variant="body-default-s">Galeria</Text>
                 </SmartLink>
               )}
             </Flex>
